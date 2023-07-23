@@ -7,8 +7,8 @@
 class Square:
     ''' Square class '''
 
-    def __init__(self, size=0):    
-        ''' 
+    def __init__(self, size=0):
+        '''
             The __init__ method is a Constructor.
             Arguments:
                 size (int): size of the square
@@ -17,5 +17,5 @@ class Square:
 
         if int(size) < 0:
             raise ValueError("size must be >= 0")
-        if not type(size) is int:     
+        if not type(size) is int:
             raise TypeError("size must be an integer")
