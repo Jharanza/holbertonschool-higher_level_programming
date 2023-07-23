@@ -7,7 +7,7 @@
 class Square:
     ''' class square '''
 
-    def __init__(self, size):
+    def __init__(self, size=0):
         '''
             Teh __init__ is the method Constructor.
             Args:
