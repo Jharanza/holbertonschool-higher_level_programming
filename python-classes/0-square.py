@@ -1,10 +1,12 @@
-#!/usr/bin/python3
+#!/usr/bin/python
+'''
+    My Square module
+'''
 class Square:
-    '''
-    Module: Are not imported
-    Square: Class that define a square
-    __init__: Constructor of the class
-    self: Reference to the same method
-    '''
+    """ Square Class to instance square """
+
     def __init__(self):
+        """ 
+        This is a constructor function 
+        """
         pass
