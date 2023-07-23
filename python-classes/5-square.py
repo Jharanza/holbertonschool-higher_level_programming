@@ -25,7 +25,7 @@ class Square:
         ''' The method setter to set the size of the square '''
         if not type(value) is int:
             raise TypeError("size must be an integer")
-        if int(value) < 0:
+        if int(value) <= 0:
             raise ValueError("size must be >= 0")
         self.__size = value
 
