@@ -25,7 +25,7 @@ class Square:
         ''' The method setter to set the size of the square '''
         if not type(value) is int:
             raise TypeError("size must be an integer")
-        if int(value) <= 0:
+        if int(value) < 0:
             raise ValueError("size must be >= 0")
         self.__size = value
 
@@ -34,12 +34,11 @@ class Square:
         return int(self.__size) * int(self.__size)
 
     def my_print(self):
-        ''' The method my_print print the square '''
-        if self.__size == 0:
-            print(" ")
+        if (self.__size) == 0:
+            print()
         else:
             for x in range(self.__size):
                 symbol = ""
-                for j in range(self.__size):
+                for y in range(self.size):
                     symbol += "#"
                 print(symbol)
