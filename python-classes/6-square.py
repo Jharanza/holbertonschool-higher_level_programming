@@ -26,7 +26,7 @@ class Square:
         ''' The method setter to set the size of the square '''
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        if value == 0:
+        if value <= 0:
             raise ValueError("size must be >= 0")
         self.__size = value
 
@@ -57,7 +57,7 @@ class Square:
         x, y = self.__position
 
         for _ in range(y):
-            print(_)
+            print()
 
         for _ in range(self.__size):
             print("_" * x + "#" * self.size)
