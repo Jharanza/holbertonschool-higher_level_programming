@@ -1,0 +1,41 @@
+>>> print_4 = __import__("4-print_square").print_square
+
+# Print without args
+>>> print_4()
+Traceback (most recent call last):
+TypeError: print_square() missing 1 required positional argument: 'size'
+
+# Print with str arg
+>>> print_4("a")
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+# Print with two args
+>>> print_4(2, 5)
+Traceback (most recent call last):
+TypeError: print_square() takes 1 positional argument but 2 were given
+
+# Print with list like arg
+>>> print_4([1, 2, 3])
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+# Print with a int arg
+>>> print_4(2)
+##
+##
+
+# Print with msxsize like arg
+>>> print_4(sys.maxsize)
+Traceback (most recent call last):
+NameError: name 'sys' is not defined
+
+# Print with a negative int arg
+>>> print_4(-4)
+Traceback (most recent call last):
+ValueError: size must be >= 0
+
+# Print with a function
+>>> print_4(print_4(2))
+Traceback (most recent call last):
+TypeError: size must be an integer
