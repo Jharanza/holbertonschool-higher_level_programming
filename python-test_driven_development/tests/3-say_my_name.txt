@@ -1,0 +1,38 @@
+>>> name = __import__("3-say_my_name").say_my_name
+
+# Boths args are str
+>>> name("Jhony", "Arana")
+My name is Jhony Arana
+
+# first arg is int and second arg is str
+>>> name(7, "ramirez")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+# Function with only one angument str
+>>> name("Jhony")
+My name is Jhony 
+
+# First arg is nan and second arg is str
+>>> name(float("nan"), "Arana")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+# First arg is str and second arg is str
+>>> name('5', "Arana")
+My name is 5 Arana
+
+# First arg is a tuple and second arg is str
+>>> name(("Jhony", "Arana"), "Arana")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+# function without args
+>>> name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+# Function with more than 2 args
+>>> name("Jhony", "Arana", "Carranza")
+Traceback (most recent call last):
+TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
