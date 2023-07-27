@@ -8,7 +8,7 @@ class My_class:
 
     def lookup(obj):
         '''
-            This method returns the available methods and attributes
+            lookup: This method returns the available methods and attributes
             of an object.
             Args:
                 obj: Only argumento to check
