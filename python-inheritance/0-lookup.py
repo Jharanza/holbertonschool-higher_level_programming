@@ -3,7 +3,7 @@
     module 0-lookup
 '''
 
-    
+
 def lookup(obj):
     '''
         lookup: This method returns the available methods and attributes
