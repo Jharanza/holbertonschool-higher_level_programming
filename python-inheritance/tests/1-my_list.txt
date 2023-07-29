@@ -1,0 +1,27 @@
+>>> MyList = __import__("1-my_list").MyList
+
+# Sorting chars
+>>> MyList.print_sorted(['a', 'c', 'b'])
+['a', 'b', 'c']
+
+# Sorting differents types
+>>> MyList.print_sorted(['a', 3, 1, 'b'])
+Traceback (most recent call last):
+TypeError: '<' not supported between instances of 'int' and 'str'
+
+# Sorting objects
+>>> MyList.print_sorted([(3, 1), [2, 7], 1])
+Traceback (most recent call last):
+TypeError: '<' not supported between instances of 'list' and 'tuple'
+
+# Sorting negative numbers
+>>> MyList.print_sorted([-4, -1, -5, -3])
+[-5, -4, -3, -1]
+
+# Sort a tuple
+>>> MyList.print_sorted((5, 3, 9))
+[3, 5, 9]
+
+# Sort a dictionary
+>>> MyList.print_sorted({"tres": 3, "uno": 1})
+['tres', 'uno']
