@@ -7,7 +7,7 @@ class Square(Rectangle):
     ''' class Square that inherits from Rectangle '''
     def __init__(self, size):
         '''
-            method Constructor 
+            method Constructor
             Args:
                 size: The size of the rectangle
         '''
@@ -18,4 +18,3 @@ class Square(Rectangle):
     def area(self):
         ''' Method area that returns the square '''
         return self.__size * self.__size
-
