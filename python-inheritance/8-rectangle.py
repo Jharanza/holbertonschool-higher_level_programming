@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 '''
-    modulo 8-rectangle
+    modulo 8-rectangle that inherits of BaseGeometry
 '''
 
 
