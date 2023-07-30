@@ -24,5 +24,5 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         ''' method that return the rep of the rectangle '''
-        text = "[Rectangle] {} {}"
+        text = "[Rectangle] {}/{}"
         return text.format(self.__width, self.__height)
