@@ -1,10 +1,8 @@
 #!/usr/bin/python3
-'''
-    module 8-rectangle that inherits of BaseGeometry
-'''
-
-
+''' Module 8-rectangle that inherits methods of BaseGeometry '''
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
 class Rectangle(BaseGeometry):
     ''' class Rectangle with constructor '''
 
