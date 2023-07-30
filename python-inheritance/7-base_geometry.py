@@ -1,4 +1,4 @@
-#!/sur/bin/python3
+#!/usr/bin/python3
 '''
     module 7-base_geometry
 '''
