@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-''' Module 9-rectangle that inherits from base_geometry'''
-
+''' Module 9-rectangle that inherits from base_geometry '''
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
