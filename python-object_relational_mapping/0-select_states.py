@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 ''' Module 0-select_states that connect python to a database '''
 import MySQLdb
+import sys
 
 
 if __name__ == "__main__":
@@ -8,10 +9,10 @@ if __name__ == "__main__":
     ''' Create the conexion to the database '''
     db = MySQLdb.connect(
         host="localhost",
-        user="root",
-        password="",
+        username=sys.argv[1],
+        password=sys.argv[2],
         port=3306,
-        database="hbtn_0e_0_usa"
+        name=sys.argv[3]
     )
 
     ''' Create cursor to execute SQL queries '''
@@ -19,8 +20,10 @@ if __name__ == "__main__":
 
     cursor.execute("SELECT id, name FROM states ORDER BY id")
 
+    data = cursor.fetchall()
+
     ''' Use a for to show all states '''
-    for x in cursor:
+    for x in data:
         print(x)
 
     ''' We close the database '''
