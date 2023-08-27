@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-''' Module 1-filter_states that list all states beginnig with N '''
+''' Module 1-filter_states that list
+    all states beginnig with N '''
 import MySQLdb
 import sys
 
@@ -18,8 +19,8 @@ if __name__ == "__main__":
     ''' Create cursor to execute SQL queries '''
     cursor = db.cursor()
 
-    condition = "SELECT id, name FROM states
-    WHERE name LIKE BINARY 'N%' ORDER BY id"
+    condition = "SELECT id, name FROM states"
+    + "WHERE name LIKE BINARY 'N%' ORDER BY id"
 
     cursor.execute(condition)
 
