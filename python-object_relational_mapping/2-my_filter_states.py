@@ -19,7 +19,7 @@ if __name__ == "__main__":
     cursor = db.cursor()
 
     condition = "SELECT * FROM states\
-            WHERE name = '{}' ORDER BY id".format(sys.argv[4])
+            WHERE BINARY name = '{}' ORDER BY id".format(sys.argv[4])
 
     cursor.execute(condition)
 
