@@ -18,7 +18,10 @@ if __name__ == "__main__":
     ''' Create cursor to execute SQL queries '''
     cursor = db.cursor()
 
-    cursor.execute("SELECT id, name FROM states WHERE name like 'N%' ORDER BY id")
+    condition = "SELECT id, name FROM states
+    WHERE name LIKE BINARY 'N%' ORDER BY id"
+
+    cursor.execute(condition)
 
     data = cursor.fetchall()
 
