@@ -8,11 +8,11 @@ if __name__ == "__main__":
 
     ''' Create the conexion to the database '''
     db = MySQLdb.connect(
-        host="localhost",
-        user='root',
-        password='',
+        host='localhost',
+        user=sys.argv[1],
+        passwd=sys.argv[2],
         port=3306,
-        database='hbtn_0e_0_usa'
+        database=sys.argv[3]
     )
 
     ''' Create cursor to execute SQL queries '''
