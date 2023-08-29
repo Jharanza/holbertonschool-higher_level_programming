@@ -19,9 +19,8 @@ if __name__ == "__main__":
     cursor = db.cursor()
 
     ''' Use mark % to avoid sql injections '''
-    sql = "SELECT a.id, a.name b.name FROM cities a \
-            LEFT JOIN states b ON a.state_id = b.id \
-            WHERE b.name = %s ORDER BY a.id"
+    sql = "SELECT a.name FROM cities a LEFT JOIN states b \
+            ON a.state_id = b.id WHERE b.name = %s ORDER BY a.id"
 
     data = (str(sys.argv[4]),)
 
