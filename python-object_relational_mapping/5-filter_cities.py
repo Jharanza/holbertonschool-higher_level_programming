@@ -30,7 +30,9 @@ if __name__ == "__main__":
 
     ''' Use a for to show all states '''
     for x in row:
-        print(x)
+        for y in x:
+            print(y, end=' ')
+    print()
 
     ''' We close the database '''
     db.close()
