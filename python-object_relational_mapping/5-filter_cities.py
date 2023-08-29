@@ -19,9 +19,10 @@ if __name__ == "__main__":
     cursor = db.cursor()
 
     ''' Use mark % to avoid sql injections '''
-    sql = "SELECT a.name FROM cities a LEFT JOIN states b \
-            ON a.states_id = b.id WHERE b.name = %s ORDER BY a.id"
-    
+    sql = "SELECT a.id, a.name b.name FROM cities a \
+            LEFT JOIN states b ON a.state_id = b.id \
+            WHERE b.name = %s ORDER BY a.id"
+
     data = (str(sys.argv[4]),)
 
     cursor.execute(sql, data)
@@ -29,7 +30,8 @@ if __name__ == "__main__":
     row = cursor.fetchall()
 
     ''' Use a for to show all states '''
-    print(row)
+    for x in row:
+        print(x)
 
     ''' We close the database '''
     db.close()
