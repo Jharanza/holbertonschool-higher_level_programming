@@ -23,6 +23,8 @@ if __name__ == "__main__":
             ON a.state_id = b.id WHERE b.name = %s ORDER BY a.id"
 
     data = (str(sys.argv[4]),)
+    if data == "":
+        print()
 
     cursor.execute(sql, data)
 
