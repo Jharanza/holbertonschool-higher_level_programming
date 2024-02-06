@@ -12,6 +12,6 @@ console.log(url)
 fetch(url)
     .then(res => res.json())
     .then(data => {
-        document.querySelector('#character').textContent = data.name;
+        document.querySelector('#character').innerText = data.name;
     })
     .catch(err => console.log(err));
