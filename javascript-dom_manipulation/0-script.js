@@ -1,3 +1,3 @@
-// Module that update the color of a tag
+// Change the colour of the header
 
 document.querySelector('header').style.color = '#FF0000';
