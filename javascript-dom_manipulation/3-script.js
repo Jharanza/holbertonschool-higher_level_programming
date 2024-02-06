@@ -1,7 +1,6 @@
 /** 
  * Toggle the class of a tag with a click
- * @header get the dom element with tag header
- * 
+ * @header variable that get the dom element with tag header
  */ 
 
 const header = document.querySelector('header');
