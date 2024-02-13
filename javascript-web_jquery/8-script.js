@@ -13,6 +13,7 @@ const req = $.ajax({
   url: 'https://swapi-api.hbtn.io/api/films/?format=json',
   datatype: 'jsonp'
 });
+
 req.done(data => {
   for (const info of data.results) {
     $('#list_movies').append(`<li>${info.title}</li>`);

@@ -11,4 +11,5 @@ const req = $.ajax({
   url: 'https://swapi-api.hbtn.io/api/people/5/?format=json',
   datatype: 'jsonp'
 });
+
 req.done(data => $('#character').text(data.name));
