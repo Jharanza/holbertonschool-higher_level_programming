@@ -2,6 +2,8 @@
  * Fetch the character name from an API
  * @$ call tot he function jQuery
  * @req promise to the given url
+ * @url API's url
+ * @jsonp Add dinamically a script to the html document of the API
  */
 const $ = window.$;
 
