@@ -8,13 +8,12 @@
 
 const ul = document.querySelector('#list_movies');
 
-
 fetch('https://swapi-api.hbtn.io/api/films/?format=json')
-    .then(res => res.json())
-    .then(data => {
-        for (let info of data['results']) {
-            const li = document.createElement('li');
-            li.innerText = info['title'];
-            ul.appendChild(li);
-        }
-    });
+  .then(res => res.json())
+  .then(data => {
+    for (const info of data.results) {
+      const li = document.createElement('li');
+      li.innerText = info.title;
+      ul.appendChild(li);
+    }
+  });
