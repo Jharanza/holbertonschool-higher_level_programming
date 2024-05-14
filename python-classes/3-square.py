@@ -2,7 +2,7 @@
 """ Create a Square class with a method that returns its square area"""
 
 class Square:
-    
+
     def __init__(self, size=0) -> None:
         """ Constructor """
         if type(size) != int:
