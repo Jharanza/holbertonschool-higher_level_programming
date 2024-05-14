@@ -2,11 +2,10 @@
 """ Create a Square class with a method to print the square"""
 
 class Square:
-    
+
     def __init__(self, size=0) -> None:
         """ Constructor """
         self.__size = size
-        self.size = size
 
     @property        
     def size(self):
@@ -28,8 +27,8 @@ class Square:
 
     def my_print(self):
         """ Print the square """
-        if self.size == 0:
+        if self.__size == 0:
             print('')
         else:
-            for _ in range(self.size):
-                print('#' * self.size)
+            for _ in range(self.__size):
+                print('#' * self.__size)

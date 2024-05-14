@@ -2,7 +2,7 @@
 """ Create a Square class with a method to print the square"""
 
 class Square:
-    
+
     def __init__(self, size=0, position=(0,0)) -> None:
         """ Constructor """
         self.size = size
@@ -21,16 +21,16 @@ class Square:
         if value < 0:
             raise ValueError('size must be >= 0')
         self.__size = value
-        
+
     @property
     def position(self): 
         """ Getter """   
         return self.__position
-    
+
     @position.setter
     def position(self, value):
         """ Setter """
-        if type(value) != tuple or len(value) != 2:
+        if not isinstance(value, tuple) or len(value) != 2 or type(value[0]) != int or type(value[1]) != int:
             raise TypeError('position must be a tuple of 2 positive integers')
         self.__position = value
 
@@ -43,11 +43,11 @@ class Square:
         if self.size == 0:
             print()
             return
-        
+
         x, y = self.position
-        
+
         for _ in range(y):
             print()
-            
+
         for _ in range(self.size):
             print(' ' * x + '#' * self.size)
