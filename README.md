@@ -1,5 +1,4 @@
 <h1>SQL - Introduction</h1>
-
 <h3>Learning Objectives</h3>
 <ul>
   <li>What’s a database</li>
@@ -18,7 +17,7 @@
 <h3>Use</h3>
 In Linux
 
-$ cat <file> | mysql -u root -p [databasename.sql]
+$ cat filename | mysql -u root -p [databasename]
 
 <h3>Titles</h3>
 <ul>
