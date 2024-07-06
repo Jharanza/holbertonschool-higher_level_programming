@@ -22,7 +22,6 @@ $ cat filename | mysql -u root -p [databasename]
 <h3>Titles</h3>
 <ul>
   <li>0. List databases</li>
-  <li></li>
   <li>1. Create a database</li>
   <li>2. Delete a database</li>
   <li>3. List tables</li>
